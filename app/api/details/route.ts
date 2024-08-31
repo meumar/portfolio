@@ -1,3 +1,5 @@
+import { link } from "fs";
+
 export async function GET(req: Request) {
   const response = {
     name: "Umar Sheik",
@@ -97,6 +99,24 @@ export async function GET(req: Request) {
       },
     ],
     projects: [
+      {
+        name: "Kodefast",
+        link: "https://kodefast.com",
+        image:
+          "https://raw.githubusercontent.com/meumar/my-files/main/projects/kodefast.jpeg",
+        description:
+          "Kodefast is a dynamic no-code platform that enables both non-technical users and professionals to quickly create custom applications using generative AI. It simplifies app development, offering a user-friendly interface with drag-and-drop functionality and AI enhancements.",
+        technologies: ["Vue", "Node", "MongoDb"],
+      },
+      {
+        name: "eSigns",
+        link: "https://esigns.io",
+        image:
+          "https://raw.githubusercontent.com/meumar/my-files/main/projects/eSigns.jpeg",
+        description:
+          "eSigns is a electronic signature platform. Its comprehensive document and data management solutions are powerful engines to accelerate growth by reaching customers with lightning speed.",
+        technologies: ["Vue", "Node", "MongoDb"],
+      },
       {
         name: "Mutli-Signature Wallet",
         link: "https://multi-sign.vercel.app",
