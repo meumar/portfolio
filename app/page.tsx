@@ -1,9 +1,4 @@
 "use client";
-import { Snippet } from "@nextui-org/snippet";
-import { Code } from "@nextui-org/code";
-
-import { siteConfig } from "@/config/site";
-import { GithubIcon } from "@/components/icons";
 import Header from "@/components/Header";
 import Summary from "@/components/Summary";
 import { Divider } from "@nextui-org/divider";

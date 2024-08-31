@@ -1,5 +1,3 @@
-import type { NextApiResponse } from "next";
-
 import sendGrid from "@sendgrid/mail";
 
 const { SEND_GRID_KEY, FROM_EMAIL } = process.env;
