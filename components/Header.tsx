@@ -54,12 +54,12 @@ const Header = () => {
         <div className="flex items-center justify-center space-x-2 mt-1">
           <h3 className="text-md sm:text-xl">{user.role}</h3>
           <span className="">|</span>
-          <a
+          <button
             className="text-xl cursor-pointer hover:underline hover:text-blue-700"
             onClick={() => redirectToURL(user.links.resume)}
           >
             Resume
-          </a>
+          </button>
         </div>
 
         {/* <h2 className="text-base sm:text-4">

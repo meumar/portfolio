@@ -25,20 +25,20 @@ const Projects = () => {
               <div className="mt-4 md:mt-0 flex flex-col justify-center flex-grow">
                 <div className="flex flex-wrap items-center mb-2 space-x-4">
                   {project.link && (
-                    <a
+                    <button
                       onClick={() => redirectToURL(project.link)}
                       className="text-gray-300 hover:underline text-sm"
                     >
                       {project.link}
-                    </a>
+                    </button>
                   )}
                   {project.git && (
-                    <a
+                    <button
                       onClick={() => redirectToURL(project.git)}
                       className="text-gray-300 cursor-pointer flex items-center hover:scale-110 text-2xl"
                     >
                       <FaGithub />
-                    </a>
+                    </button>
                   )}
                 </div>
                 <p className="text-whitemt-2 text-sm sm:text-base">
