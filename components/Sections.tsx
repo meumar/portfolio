@@ -12,14 +12,15 @@ export default function SectionsTabs() {
     <main className="flex w-full flex-col mt-5">
       <Tabs
         aria-label="Options"
-        size="lg"
-        variant="light"
+        color="primary"
+        variant="underlined"
         className="self-center"
         classNames={{
-          tabList: "bg-gray-900",
-          cursor: "",
-          tab: "bg-gray-900",
-          tabContent: "",
+          tabList:
+            "gap-6 w-full relative rounded-none p-0 border-b border-divider",
+          cursor: "w-full bg-[#016FEE]",
+          tab: "max-w-fit px-0 h-12",
+          tabContent: "group-data-[selected=true]:text-[#016FEE]",
         }}
       >
         <Tab key="experience" title="Experience">

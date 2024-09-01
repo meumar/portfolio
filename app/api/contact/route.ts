@@ -1,11 +1,11 @@
 import sendGrid from "@sendgrid/mail";
 
-const { SEND_GRID_KEY, FROM_EMAIL } = process.env;
+const { SEND_GRID_KEY, FROM_EMAIL, TO_EMAIL } = process.env;
 
 sendGrid.setApiKey(`${SEND_GRID_KEY}`);
 
 interface mailBody {
-  to: string;
+  to: any;
   from?: string;
   subject: string;
   text: string;
@@ -25,17 +25,14 @@ const sendMail = async (body: mailBody) => {
 };
 
 export async function POST(req: Request) {
-  const { name, email, phone, message, subject } = await req.json();
+  const { email } = await req.json();
 
   await sendMail({
-    to: "umarsheik.nimble@gmail.com",
-    subject: "From portfolio " + subject,
-    text: message,
+    to: TO_EMAIL,
+    subject: "From portfolio ",
+    text: "Someone is trying reach you",
     html: `<div style="text-align: center">
-    <p>name: ${name} </p>
-    <p>Sender: ${email}</p>
-    <p>Phone: ${phone}</p>
-    <p>${message}</p>
+    <p>${email} is trying reach you</p>
     </div>`,
   });
 

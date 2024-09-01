@@ -1,5 +1,3 @@
-import { link } from "fs";
-
 export async function GET(req: Request) {
   const response = {
     name: "Umar Sheik",
@@ -17,7 +15,7 @@ export async function GET(req: Request) {
       "React Native",
     ],
     summary:
-      "Full-Stack Web Developer with extensive experience in building scalable web applications using Vue.js, React.js, Next.js, Node.js, and MongoDB. I specialize in creating efficient back-end systems and user-friendly front-end interfaces. I have consistently led projects that improve user engagement by 20% or more and reduce operational costs through optimized development practices.",
+      "I'm a dedicated and passionate Full-Stack Web Developer with a strong foundation in both front-end and back-end technologies. My journey in web development began with a fascination for creating intuitive and user-friendly interfaces, and over time, I've honed my skills to build robust, scalable, and efficient web applications. I specialize in crafting responsive and dynamic user interfaces using modern frameworks like Vue.js, React.js, and Next.js, and designing secure, scalable back-end systems with Node.js and MongoDB. Additionally, I explore decentralized applications on the Solana blockchain, with experience in building NFT marketplaces and other blockchain-based projects. I approach every project with a problem-solving mindset, aiming to deliver high-quality, maintainable code that meets user needs while staying updated with the latest technologies and trends in web development.",
     languages: [
       {
         name: "Solana",

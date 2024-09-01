@@ -27,7 +27,7 @@ const Projects = () => {
                   {project.link && (
                     <button
                       onClick={() => redirectToURL(project.link)}
-                      className="text-gray-300 hover:underline text-sm"
+                      className="text-gray-300 hover:underline text-sm hover:text-blue-500"
                     >
                       {project.link}
                     </button>
@@ -35,7 +35,7 @@ const Projects = () => {
                   {project.git && (
                     <button
                       onClick={() => redirectToURL(project.git)}
-                      className="text-gray-300 cursor-pointer flex items-center hover:scale-110 text-2xl"
+                      className="text-gray-300 cursor-pointer flex items-center hover:scale-110 text-2xl hover:text-blue-500"
                     >
                       <FaGithub />
                     </button>
