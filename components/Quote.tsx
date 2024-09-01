@@ -21,7 +21,7 @@ const Quote = () => {
       <div className="w-full">
         <Card>
           <CardBody className="flex items-center justify-center text-center">
-            <p className="text-base italic">"{quote}"</p>
+            <p className="text-base italic">{`"${quote}"`}</p>
           </CardBody>
         </Card>
       </div>
