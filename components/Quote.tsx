@@ -19,7 +19,7 @@ const Quote = () => {
   return (
     <main className="flex items-center justify-center">
       <div className="w-full">
-        <Card>
+        <Card className="bg-gray-900 border border-gray-800">
           <CardBody className="flex items-center justify-center text-center">
             <p className="text-base italic">{`"${quote}"`}</p>
           </CardBody>

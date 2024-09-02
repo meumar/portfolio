@@ -1,17 +1,14 @@
 "use client";
 
-import React, { useContext, useState } from "react";
-
-import UserContext from "@/context/UserDetailsContext";
+import React, { useState } from "react";
 
 import { Input } from "@nextui-org/input";
 import { Button } from "@nextui-org/button";
 
 import { toast } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
+import "react-toastify/dist/ReactToastify.css";
 
 const Footer = () => {
-  const user: any = useContext(UserContext);
   const [email, setEmail] = useState<string>("");
   const [errors, setErrors] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(false);
@@ -38,6 +35,11 @@ const Footer = () => {
     }
   };
 
+  const setData = (value: string) => {
+    setErrors("");
+    setEmail(value);
+  };
+
   return (
     <main className="flex items-center justify-center bg-gray-900 border border-gray-800">
       <div className="w-full max-w-md p-5 text-center">
@@ -53,8 +55,9 @@ const Footer = () => {
             variant="bordered"
             placeholder="Enter your email"
             onChange={(event: React.ChangeEvent<HTMLInputElement>) =>
-              setEmail(event.target.value)
+              setData(event.target.value)
             }
+            onClear={() => setEmail("")}
           />
           <Button
             color="primary"
