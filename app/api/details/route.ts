@@ -117,7 +117,7 @@ export async function GET(req: Request) {
       },
       {
         name: "Sol-Bank",
-        link: "https://sol-bank-3tgy.vercel.app",
+        link: "https://sol-bank.vercel.app",
         image:
           "https://raw.githubusercontent.com/meumar/my-files/main/projects/sol-bank.png",
         git: "https://github.com/meumar/sol-bank",
