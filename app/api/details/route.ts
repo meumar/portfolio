@@ -116,7 +116,7 @@ export async function GET(req: Request) {
         technologies: ["Vue", "Node", "MongoDb"],
       },
       {
-        name: "Sol-bank",
+        name: "Sol-Bank",
         link: "https://sol-bank-3tgy.vercel.app",
         image:
           "https://raw.githubusercontent.com/meumar/my-files/main/projects/sol-bank.png",
