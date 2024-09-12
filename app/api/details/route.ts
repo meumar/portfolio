@@ -116,6 +116,16 @@ export async function GET(req: Request) {
         technologies: ["Vue", "Node", "MongoDb"],
       },
       {
+        name: "Sol-bank",
+        link: "https://sol-bank-3tgy.vercel.app",
+        image:
+          "https://raw.githubusercontent.com/meumar/my-files/main/projects/sol-bank.png",
+        git: "https://github.com/meumar/sol-bank",
+        description:
+          "Developed a decentralized web application on the Solana blockchain where users can supply and borrow SPL tokens. Integrated dynamic interest calculations based on liquidity pool usage. Built with Next.js for the front end and Anchor for smart contracts, ensuring fully decentralized data storage on the blockchain.",
+        technologies: ["React", "Next.js", "Rust", "Anchor", "Tailwind"],
+      },
+      {
         name: "Mutli-Signature Wallet",
         link: "https://multi-sign.vercel.app",
         image:
