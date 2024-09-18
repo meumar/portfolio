@@ -12,6 +12,7 @@ export async function GET(req: Request) {
       "React",
       "Next.js",
       "Node.js",
+      "Hono",
       "React Native",
     ],
     summary:
@@ -58,6 +59,10 @@ export async function GET(req: Request) {
           "https://raw.githubusercontent.com/meumar/my-files/main/images/node.png",
       },
       {
+        name: "Hono",
+        image: "https://raw.githubusercontent.com/meumar/my-files/main/images/hono.svg"
+      },
+      {
         name: "MongoDB",
         image:
           "https://raw.githubusercontent.com/meumar/my-files/main/images/mongodb.png",
@@ -65,7 +70,7 @@ export async function GET(req: Request) {
     ],
     links: {
       resume:
-        "https://drive.google.com/file/d/1M9yH8Ov2GXhZ49nCUSQdQM57Usp0kJso/view?usp=sharing",
+        "https://drive.google.com/file/d/17SFfrYyiMsdy6hj6leyk-D3l3mciMTHa/view?usp=drive_link",
       github: "https://github.com/meumar",
       linkedin: "https://www.linkedin.com/in/umar-sheik-2725b91b8",
       discord: "https://discord.com/users/846244276639105044",
@@ -97,24 +102,6 @@ export async function GET(req: Request) {
       },
     ],
     projects: [
-      {
-        name: "Kodefast",
-        link: "https://kodefast.com",
-        image:
-          "https://raw.githubusercontent.com/meumar/my-files/main/projects/kodefast.jpeg",
-        description:
-          "Kodefast is a dynamic no-code platform that enables both non-technical users and professionals to quickly create custom applications using generative AI. It simplifies app development, offering a user-friendly interface with drag-and-drop functionality and AI enhancements.",
-        technologies: ["Vue", "Node", "MongoDb"],
-      },
-      {
-        name: "eSigns",
-        link: "https://esigns.io",
-        image:
-          "https://raw.githubusercontent.com/meumar/my-files/main/projects/eSigns.jpeg",
-        description:
-          "eSigns is a electronic signature platform. Its comprehensive document and data management solutions are powerful engines to accelerate growth by reaching customers with lightning speed.",
-        technologies: ["Vue", "Node", "MongoDb"],
-      },
       {
         name: "Sol-Bank",
         link: "https://sol-bank.vercel.app",
@@ -164,6 +151,24 @@ export async function GET(req: Request) {
         description:
           "This project implements a simple game on the Solana blockchain using the Anchor framework for the smart contract and Next.js for the user interface (UI). The game allows users to connect their wallets, create or join a game, and bet SPL tokens. The game is designed for two players, and the winner takes the total bet amount. If the game ends in a draw, the bet amount is returned to each player.",
         technologies: ["React", "Next.js", "Rust", "Anchor", "Tailwind"],
+      },
+      {
+        name: "Kodefast",
+        link: "https://kodefast.com",
+        image:
+          "https://raw.githubusercontent.com/meumar/my-files/main/projects/kodefast.jpeg",
+        description:
+          "Kodefast is a dynamic no-code platform that enables both non-technical users and professionals to quickly create custom applications using generative AI. It simplifies app development, offering a user-friendly interface with drag-and-drop functionality and AI enhancements.",
+        technologies: ["Vue", "Node", "MongoDb"],
+      },
+      {
+        name: "eSigns",
+        link: "https://esigns.io",
+        image:
+          "https://raw.githubusercontent.com/meumar/my-files/main/projects/eSigns.jpeg",
+        description:
+          "eSigns is a electronic signature platform. Its comprehensive document and data management solutions are powerful engines to accelerate growth by reaching customers with lightning speed.",
+        technologies: ["Vue", "Node", "MongoDb"],
       },
     ],
   };
