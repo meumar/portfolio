@@ -60,7 +60,8 @@ export async function GET(req: Request) {
       },
       {
         name: "Hono",
-        image: "https://raw.githubusercontent.com/meumar/my-files/main/images/hono.svg"
+        image:
+          "https://raw.githubusercontent.com/meumar/my-files/main/images/hono.svg",
       },
       {
         name: "MongoDB",
@@ -151,6 +152,15 @@ export async function GET(req: Request) {
         description:
           "This project implements a simple game on the Solana blockchain using the Anchor framework for the smart contract and Next.js for the user interface (UI). The game allows users to connect their wallets, create or join a game, and bet SPL tokens. The game is designed for two players, and the winner takes the total bet amount. If the game ends in a draw, the bet amount is returned to each player.",
         technologies: ["React", "Next.js", "Rust", "Anchor", "Tailwind"],
+      },
+      {
+        name: "uAuth(Backend service)",
+        image:
+          "https://raw.githubusercontent.com/meumar/my-files/refs/heads/main/images/banner.jpg",
+        git: "https://github.com/meumar/uAuth",
+        description:
+          "This is the backend service that is used as an IdP (Identity provider), where users can create collections(basically users). These collections act as users in your applications, so your application doesn't need to have users' collections, you can simply integrate our APIs for complete authentication and user management.",
+        technologies: ["Node.js", "Hono"],
       },
       {
         name: "Kodefast",
