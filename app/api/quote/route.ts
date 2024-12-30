@@ -10,6 +10,10 @@ export async function GET(req: Request) {
     "Solving complex problems with clean, maintainable code and best practices.",
     "Continuously exploring the latest web development technologies to stay ahead of the curve.",
     "Integrating blockchain technology into modern web applications for the future of decentralized solutions.",
+    "Innovating with smart contracts on Solana and Sui for next-gen decentralized solutions.",
+    "Harnessing the power of Rust to build efficient and secure blockchain applications.",
+    "Exploring the intersection of blockchain and Web3 technologies to drive innovation.",
+    "Creating seamless user experiences for dApps with blockchain integrations."
   ];
   const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
