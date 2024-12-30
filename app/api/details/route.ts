@@ -1,7 +1,7 @@
 export async function GET(req: Request) {
   const response = {
     name: "Umar Sheik",
-    role: "Software Engineer",
+    role: "Developer",
     email: "meumarsheik@gmail.com",
     skills: [
       "Solana",
@@ -16,7 +16,7 @@ export async function GET(req: Request) {
       "React Native",
     ],
     summary:
-      "I'm a dedicated and passionate Full-Stack Web Developer with a strong foundation in both front-end and back-end technologies. My journey in web development began with a fascination for creating intuitive and user-friendly interfaces, and over time, I've honed my skills to build robust, scalable, and efficient web applications. I specialize in crafting responsive and dynamic user interfaces using modern frameworks like Vue.js, React.js, and Next.js, and designing secure, scalable back-end systems with Node.js and MongoDB. Additionally, I explore decentralized applications on the Solana blockchain, with experience in building NFT marketplaces and other blockchain-based projects. I approach every project with a problem-solving mindset, aiming to deliver high-quality, maintainable code that meets user needs while staying updated with the latest technologies and trends in web development.",
+      "I'm a dedicated and passionate Blockchain and Full-Stack Web Developer with a strong foundation in both front-end and back-end technologies. My journey in development began with a fascination for creating intuitive and user-friendly interfaces, and over time, I've honed my skills to build robust, scalable, and efficient web and blockchain applications. I specialize in crafting responsive and dynamic user interfaces using modern frameworks like Vue.js, React.js, and Next.js, and designing secure, scalable back-end systems with Node.js and MongoDB. Additionally, I focus on developing decentralized applications on the Solana and Sui blockchains, with expertise in Rust and experience in building NFT marketplaces and other blockchain-based projects. I approach every project with a problem-solving mindset, aiming to deliver high-quality, maintainable code that meets user needs while staying updated with the latest technologies and trends in blockchain and web development.",
     languages: [
       {
         name: "Solana",
@@ -68,6 +68,11 @@ export async function GET(req: Request) {
         image:
           "https://raw.githubusercontent.com/meumar/my-files/main/images/mongodb.png",
       },
+      {
+        name: "Sui",
+        image:
+          "https://raw.githubusercontent.com/meumar/my-files/refs/heads/main/images/sui.png",
+      },
     ],
     links: {
       resume:
@@ -78,9 +83,19 @@ export async function GET(req: Request) {
     },
     experience: [
       {
+        company_name: "Ottersec",
+        start_data: "Nov 2024",
+        end_date: "Present",
+        role: "BLOCKCHAIN DEVELOPER",
+        summary: [
+          "Developing tools for token verification and creation on the Sui blockchain, ensuring compliance and security.",
+          "Conducting formal verification of Solana programs to enhance reliability and prevent vulnerabilities.",
+        ],
+      },
+      {
         company_name: "Hallmark Global Technologies",
         start_data: "Jun 2021",
-        end_date: "Present",
+        end_date: "Oct 2024",
         role: "SOFTWARE ENGINEER",
         summary: [
           "Spearheaded the creation of an e-signature application, boosting user adoption by 20% and reducing customer support inquiries by 15%.",
