@@ -1,4 +1,4 @@
-export async function GET(req: Request) {
+export async function GET(_req: Request) {
   const response = {
     name: "Umar Sheik",
     role: "Developer",
@@ -16,7 +16,7 @@ export async function GET(req: Request) {
       "React Native",
     ],
     summary:
-      "I'm a dedicated and passionate Blockchain and Full-Stack Web Developer with a strong foundation in both front-end and back-end technologies. My journey in development began with a fascination for creating intuitive and user-friendly interfaces, and over time, I've honed my skills to build robust, scalable, and efficient web and blockchain applications. I specialize in crafting responsive and dynamic user interfaces using modern frameworks like Vue.js, React.js, and Next.js, and designing secure, scalable back-end systems with Node.js and MongoDB. Additionally, I focus on developing decentralized applications on the Solana and Sui blockchains, with expertise in Rust and experience in building NFT marketplaces and other blockchain-based projects. I approach every project with a problem-solving mindset, aiming to deliver high-quality, maintainable code that meets user needs while staying updated with the latest technologies and trends in blockchain and web development.",
+      "I'm a dedicated and passionate Blockchain and Full-Stack Web Developer with a strong foundation in both front-end and back-end technologies. My journey in development began with a fascination for creating intuitive and user-friendly interfaces, and over time, I've honed my skills to build robust, scalable, and efficient web and blockchain applications. I specialize in crafting responsive and dynamic user interfaces using modern frameworks like Vue.js, React.js, and Next.js, and designing secure, scalable back-end systems with RUST and Node.js. Additionally, I focus on developing decentralized applications on the Solana and Sui blockchains, with expertise in Rust and experience in building NFT marketplaces and other blockchain-based projects. I approach every project with a problem-solving mindset, aiming to deliver high-quality, maintainable code that meets user needs while staying updated with the latest technologies and trends in blockchain and web development.",
     languages: [
       {
         name: "Solana",
@@ -76,7 +76,7 @@ export async function GET(req: Request) {
     ],
     links: {
       resume:
-        "https://drive.google.com/file/d/17SFfrYyiMsdy6hj6leyk-D3l3mciMTHa/view?usp=drive_link",
+        "https://drive.google.com/file/d/11ZmHdTMa2owh5Rw505BReyvumgk3r7vG/view?usp=sharing",
       github: "https://github.com/meumar",
       linkedin: "https://www.linkedin.com/in/umar-sheik-2725b91b8",
       discord: "https://discord.com/users/846244276639105044",
@@ -90,6 +90,7 @@ export async function GET(req: Request) {
         summary: [
           "Developing tools for token verification and creation on the Sui blockchain, ensuring compliance and security.",
           "Conducting formal verification of Solana programs to enhance reliability and prevent vulnerabilities.",
+          "Implementing RUST based internal tools for efficient team operations and project management.",
         ],
       },
       {
@@ -197,6 +198,7 @@ export async function GET(req: Request) {
       },
     ],
   };
+
   return new Response(JSON.stringify(response), {
     headers: { "Content-Type": "application/json" },
   });

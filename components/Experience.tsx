@@ -2,7 +2,7 @@
 import { useEffect, useContext } from "react";
 import UserContext from "@/context/UserDetailsContext";
 import { experienceData } from "@/config/site";
-import { Divider } from "@nextui-org/divider";
+import { Divider } from "@heroui/divider";
 
 const Experience = () => {
   const user: any = useContext(UserContext);

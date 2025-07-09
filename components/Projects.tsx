@@ -2,7 +2,7 @@
 import { useContext } from "react";
 import UserContext from "@/context/UserDetailsContext";
 import { FaGithub } from "react-icons/fa";
-import { Divider } from "@nextui-org/divider";
+import { Divider } from "@heroui/divider";
 
 const Projects = () => {
   const user: any = useContext(UserContext);

@@ -1,5 +1,5 @@
 "use client";
-import { Divider } from "@nextui-org/divider";
+import { Divider } from "@heroui/divider";
 
 import Header from "@/components/Header";
 import Summary from "@/components/Summary";

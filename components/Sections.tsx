@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import { Tabs, Tab } from "@nextui-org/tabs";
-import { Card, CardBody } from "@nextui-org/card";
+import { Tabs, Tab } from "@heroui/tabs";
+import { Card, CardBody } from "@heroui/card";
 import UserContext from "@/context/UserDetailsContext";
 import Experience from "./Experience";
 import Projects from "./Projects";

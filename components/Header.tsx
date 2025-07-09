@@ -4,7 +4,7 @@ import { useState, useEffect, useContext } from "react";
 import UserContext from "@/context/UserDetailsContext";
 import { title } from "@/components/primitives";
 import { FaGithub, FaEnvelope, FaLinkedinIn, FaDiscord } from "react-icons/fa";
-import { Tooltip } from "@nextui-org/tooltip";
+import { Tooltip } from "@heroui/tooltip";
 
 const imageHeight = 120;
 const imageStyles =
