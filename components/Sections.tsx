@@ -1,19 +1,15 @@
-import React, { useContext } from "react";
+import React from "react";
 import { Tabs, Tab } from "@heroui/tabs";
 import { Card, CardBody } from "@heroui/card";
-import UserContext from "@/context/UserDetailsContext";
+
 import Experience from "./Experience";
 import Projects from "./Projects";
 
 export default function SectionsTabs() {
-  const user: any = useContext(UserContext);
-
   return (
     <main className="flex w-full flex-col mt-5">
       <Tabs
         aria-label="Options"
-        color="primary"
-        variant="underlined"
         className="self-center"
         classNames={{
           tabList:
@@ -22,6 +18,8 @@ export default function SectionsTabs() {
           tab: "max-w-fit px-0 h-12",
           tabContent: "group-data-[selected=true]:text-[#016FEE]",
         }}
+        color="primary"
+        variant="underlined"
       >
         <Tab key="experience" title="Experience">
           <Card className="bg-gray-950 border border-gray-800 p-5">

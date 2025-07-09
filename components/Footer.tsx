@@ -1,10 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
-
 import { Input } from "@heroui/input";
 import { Button } from "@heroui/button";
-
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -18,6 +16,7 @@ const Footer = () => {
 
     if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
       setErrors("Please enter a valid email address");
+
       return;
     }
     setLoading(true);
@@ -50,10 +49,10 @@ const Footer = () => {
             isClearable
             errorMessage={errors ? errors : ""}
             isInvalid={errors ? true : false}
+            placeholder="Enter your email"
             type="email"
             value={email}
             variant="bordered"
-            placeholder="Enter your email"
             onChange={(event: React.ChangeEvent<HTMLInputElement>) =>
               setData(event.target.value)
             }
@@ -61,9 +60,9 @@ const Footer = () => {
           />
           <Button
             color="primary"
+            isLoading={loading}
             variant="bordered"
             onClick={sayHello}
-            isLoading={loading}
           >
             Say Hello
           </Button>

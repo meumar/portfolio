@@ -1,11 +1,12 @@
 "use client";
-import { useEffect, useContext } from "react";
-import UserContext from "@/context/UserDetailsContext";
-import { experienceData } from "@/config/site";
+import { useContext } from "react";
 import { Divider } from "@heroui/divider";
+
+import UserContext from "@/context/UserDetailsContext";
 
 const Experience = () => {
   const user: any = useContext(UserContext);
+
   return (
     <main>
       <div className="">

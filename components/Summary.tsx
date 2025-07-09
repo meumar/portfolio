@@ -6,6 +6,7 @@ import UserContext from "@/context/UserDetailsContext";
 
 const Summary = () => {
   const user: any = useContext(UserContext);
+
   useEffect(() => {}, []);
 
   return (

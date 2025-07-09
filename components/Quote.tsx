@@ -9,9 +9,10 @@ const Quote = () => {
   const fetchQuote = async () => {
     const response = await fetch("/api/quote");
     const data = await response.json();
+
     setQuote(data.quote);
-    console.log("data", data);
   };
+
   useEffect(() => {
     fetchQuote();
   }, []);

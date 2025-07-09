@@ -1,4 +1,4 @@
-export async function GET(req: Request) {
+export async function GET(_req: Request) {
   const quotes = [
     "Crafting seamless user experiences with Vue.js and Next.js.",
     "Delivering robust back-end solutions using Node.js and MongoDB.",
@@ -13,7 +13,7 @@ export async function GET(req: Request) {
     "Innovating with smart contracts on Solana and Sui for next-gen decentralized solutions.",
     "Harnessing the power of Rust to build efficient and secure blockchain applications.",
     "Exploring the intersection of blockchain and Web3 technologies to drive innovation.",
-    "Creating seamless user experiences for dApps with blockchain integrations."
+    "Creating seamless user experiences for dApps with blockchain integrations.",
   ];
   const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
 

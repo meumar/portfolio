@@ -1,10 +1,12 @@
 "use client";
 
 import { useState, useEffect, useContext } from "react";
-import UserContext from "@/context/UserDetailsContext";
-import { title } from "@/components/primitives";
 import { FaGithub, FaEnvelope, FaLinkedinIn, FaDiscord } from "react-icons/fa";
 import { Tooltip } from "@heroui/tooltip";
+
+import UserContext from "@/context/UserDetailsContext";
+import { title } from "@/components/primitives";
+import IconWrapper from "@/components/icons/IconWrapper";
 
 const imageHeight = 120;
 const imageStyles =
@@ -16,13 +18,16 @@ const Header = () => {
   const [skills, setSkills] = useState("");
 
   const user: any = useContext(UserContext);
+
   useEffect(() => {
     const typingEffect = async () => {
       if (!skills) {
         let skill = "";
+
         setSkills("");
         for (let i: number = 0; i < user.skills.length; i++) {
           let str = i > 0 ? " | " : "";
+
           str += user.skills[i];
           skill += str;
         }
@@ -36,6 +41,7 @@ const Header = () => {
         setCursor(i !== nameToType.length - 1 ? "|" : "");
       }
     };
+
     if (user?.name) {
       typingEffect();
     }
@@ -43,6 +49,7 @@ const Header = () => {
   const redirectToURL = (url: string) => {
     window.open(url, "_blank");
   };
+
   return (
     <main className="flex flex-row items-center">
       <div className="w-full text-center p-0">
@@ -68,7 +75,7 @@ const Header = () => {
               className={imageStyles}
               onClick={() => redirectToURL(user.links.github)}
             >
-              <FaGithub className={iconStyles} />
+              <IconWrapper className={iconStyles} icon={FaGithub} />
             </button>
           </Tooltip>
           <Tooltip content="Mail">
@@ -76,7 +83,7 @@ const Header = () => {
               className={imageStyles}
               onClick={() => redirectToURL(`mailto:${user.email}`)}
             >
-              <FaEnvelope className={iconStyles} />
+              <IconWrapper className={iconStyles} icon={FaEnvelope} />
             </button>
           </Tooltip>
           <Tooltip content="LinkedIn">
@@ -84,7 +91,7 @@ const Header = () => {
               className={imageStyles}
               onClick={() => redirectToURL(user.links.linkedin)}
             >
-              <FaLinkedinIn className={iconStyles} />
+              <IconWrapper className={iconStyles} icon={FaLinkedinIn} />
             </button>
           </Tooltip>
           <Tooltip content="Discord">
@@ -92,7 +99,7 @@ const Header = () => {
               className={imageStyles}
               onClick={() => redirectToURL(user.links.discord)}
             >
-              <FaDiscord className={iconStyles} />
+              <IconWrapper className={iconStyles} icon={FaDiscord} />
             </button>
           </Tooltip>
         </div>

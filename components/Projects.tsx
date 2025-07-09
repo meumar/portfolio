@@ -1,14 +1,19 @@
 "use client";
 import { useContext } from "react";
-import UserContext from "@/context/UserDetailsContext";
 import { FaGithub } from "react-icons/fa";
 import { Divider } from "@heroui/divider";
+import Image from "next/image";
+
+import UserContext from "@/context/UserDetailsContext";
+
+import IconWrapper from "./icons/IconWrapper";
 
 const Projects = () => {
   const user: any = useContext(UserContext);
   const redirectToURL = (url: string) => {
     window.open(url, "_blank");
   };
+
   return (
     <main>
       <div className="">
@@ -26,18 +31,18 @@ const Projects = () => {
                 <div className="flex flex-wrap items-center mb-2 space-x-4">
                   {project.link && (
                     <button
-                      onClick={() => redirectToURL(project.link)}
                       className="text-gray-300 hover:underline text-sm hover:text-blue-500"
+                      onClick={() => redirectToURL(project.link)}
                     >
                       {project.link}
                     </button>
                   )}
                   {project.git && (
                     <button
-                      onClick={() => redirectToURL(project.git)}
                       className="text-gray-300 cursor-pointer flex items-center hover:scale-110 text-2xl hover:text-blue-500"
+                      onClick={() => redirectToURL(project.git)}
                     >
-                      <FaGithub />
+                      <IconWrapper icon={FaGithub} />
                     </button>
                   )}
                 </div>
@@ -57,10 +62,13 @@ const Projects = () => {
               </div>
               {project.image && (
                 <div className="flex-shrink-0">
-                  <img
-                    src={project.image}
+                  <Image
+                    unoptimized
                     alt="projectImage"
                     className="w-full md:w-64 h-auto rounded-lg shadow-md border-gray-800 border"
+                    height={192}
+                    src={project.image}
+                    width={256}
                   />
                 </div>
               )}
