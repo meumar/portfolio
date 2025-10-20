@@ -120,6 +120,14 @@ export async function GET(_req: Request) {
     ],
     projects: [
       {
+        name: "BTB-Watcher",
+        link: "https://www.btb-watcher.com",
+        image: "https://raw.githubusercontent.com/meumar/my-files/main/projects/btb-watcher.png",
+        git: "https://github.com/meumar/btb-watcher-extension",
+        description: "A secure, privacy-focused VS Code extension that intelligently monitors coding activity and provides comprehensive productivity analytics. Features real-time tracking of file-level insights, line position monitoring, terminal activity, and development patterns analysis. Users can selectively track projects, view productivity heatmaps, and share their productivity data with others.",
+        technologies: ["VS Code Extension", "React", "Hono", "Tailwind", "Typescript"]
+      },
+      {
         name: "Sol-Bank",
         link: "https://sol-bank.vercel.app",
         image:
