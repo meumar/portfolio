@@ -76,7 +76,7 @@ export async function GET(_req: Request) {
     ],
     links: {
       resume:
-        "https://drive.google.com/file/d/11ZmHdTMa2owh5Rw505BReyvumgk3r7vG/view?usp=sharing",
+        "https://drive.google.com/file/d/1zywaLZLmLyNfHYuLRVz5rv54oN_UIKNO/view?usp=sharing",
       github: "https://github.com/meumar",
       linkedin: "https://www.linkedin.com/in/umar-sheik-2725b91b8",
       discord: "https://discord.com/users/846244276639105044",
@@ -122,10 +122,18 @@ export async function GET(_req: Request) {
       {
         name: "BTB-Watcher",
         link: "https://www.btb-watcher.com",
-        image: "https://raw.githubusercontent.com/meumar/my-files/main/projects/btb-watcher.png",
+        image:
+          "https://raw.githubusercontent.com/meumar/my-files/main/projects/btb-watcher.png",
         git: "https://github.com/meumar/btb-watcher-extension",
-        description: "A secure, privacy-focused VS Code extension that intelligently monitors coding activity and provides comprehensive productivity analytics. Features real-time tracking of file-level insights, line position monitoring, terminal activity, and development patterns analysis. Users can selectively track projects, view productivity heatmaps, and share their productivity data with others.",
-        technologies: ["VS Code Extension", "React", "Hono", "Tailwind", "Typescript"]
+        description:
+          "A secure, privacy-focused VS Code extension that intelligently monitors coding activity and provides comprehensive productivity analytics. Features real-time tracking of file-level insights, line position monitoring, terminal activity, and development patterns analysis. Users can selectively track projects, view productivity heatmaps, and share their productivity data with others.",
+        technologies: [
+          "VS Code Extension",
+          "React",
+          "Hono",
+          "Tailwind",
+          "Typescript",
+        ],
       },
       {
         name: "Sol-Bank",
